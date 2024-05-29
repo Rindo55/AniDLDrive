@@ -6,8 +6,9 @@ load_dotenv()
 
 # Telegram API credentials obtained from https://my.telegram.org/auth
 API_ID=3845818
-API_HASH="5152810815:AAExPpIk0MuJafISDs-6zb3jH-Ig8ghKt90"
-BOT_TOKENS="6417602347:AAELMBu-V_FwqI5fA8v5L3RmRiAVqh70jKQ"
+API_HASH="96b46175824223a33737657ab943fd6a"
+BOT_TOKENS = os.getenv("6417602347:AAELMBu-V_FwqI5fA8v5L3RmRiAVqh70jKQ", "").strip(", ").split(",")
+BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip() != ""]  # Clean up any extra spaces
 STORAGE_CHANNEL=-100123456789
 DATABASE_BACKUP_MSG_ID=5
 
