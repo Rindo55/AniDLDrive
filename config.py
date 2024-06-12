@@ -10,7 +10,7 @@ API_HASH="96b46175824223a33737657ab943fd6a"
 BOT_TOKENS = os.getenv("BOT_TOKENS", "6417602347:AAELMBu-V_FwqI5fA8v5L3RmRiAVqh70jKQ").strip(", ").split(",")
 BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip() != ""]  # Clean up any extra spaces
 STORAGE_CHANNEL=-1001503950731
-DATABASE_BACKUP_MSG_ID=5
+DATABASE_BACKUP_MSG_ID=18
 
 # List of Telegram bot tokens used for file upload/download operations
 
